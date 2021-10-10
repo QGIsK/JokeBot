@@ -35,10 +35,13 @@
     "prettier": "^2.0.5"
   },
   "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
     "@qgisk/jokeapi-wrapper": "^1.0.8",
+    "discord-api-types": "^0.23.1",
     "discord.js": "^13.2.0",
     "dotenv": "^10.0.0",
     "joi": "^17.4.2",
+    "mongoose": "^6.0.10",
     "winston": "^3.3.3"
   }
 }
