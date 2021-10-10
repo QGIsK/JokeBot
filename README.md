@@ -6,7 +6,10 @@ Currently only a discord bot, will most likely add a telegram bot next time im b
 Hosted on heroku with worker.
 MongoDB database on MongoCloud
 
-## • Installation
+## • Hosted version
+Click [here](https://discord.com/oauth2/authorize?client_id=896816739336196208&permissions=0&scope=bot%20applications.commands) to invite the bot to your server
+
+## • Local version installation
 
 ### • Prerequisites
 
