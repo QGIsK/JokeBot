@@ -13,7 +13,7 @@ module.exports = {
 
     await interaction.reply(output.setup);
     setTimeout(() => {
-      return interaction.followUp(output.delivery);
+      return interaction.channel.send(output.delivery);
     }, 2000);
   },
 };
