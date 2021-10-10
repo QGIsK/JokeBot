@@ -1,0 +1,44 @@
+{
+  "name": "jokebot",
+  "version": "1.0.0",
+  "description": "Joke bot",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QGIsK/JokeBot.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Demian <QGisK>",
+    "email": "devaccdemiann@gmail.com",
+    "url": "https://demiann.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/QGIsK/JokeBot/issues"
+  },
+  "homepage": "https://github.com/QGIsK/JokeBot#readme",
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-security": "^1.4.0",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "@qgisk/jokeapi-wrapper": "^1.0.8",
+    "discord.js": "^13.2.0",
+    "dotenv": "^10.0.0",
+    "joi": "^17.4.2",
+    "winston": "^3.3.3"
+  }
+}
