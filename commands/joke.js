@@ -5,7 +5,7 @@ const JokeClient = new JokeWrapper();
 module.exports = {
   data: new SlashCommandBuilder().setName('joke').setDescription('Replies with a joke!'),
   async execute(interaction, settings) {
-    const output = await JokeClient.getJoke({ ...settings });
+    const output = await JokeClient.getJoke(settings);
 
     if (output.type == 'single') {
       return interaction.reply(output.joke);
