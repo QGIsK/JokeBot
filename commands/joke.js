@@ -10,7 +10,14 @@ module.exports = {
   async execute(interaction, settings) {
     const category = interaction.options.get('category');
 
-    const output = await JokeClient.getJoke({ ...settings, categories: category ? category.value : 'any' });
+    category ? (settings.categories = category.value) : 'any';
+
+    const output = await JokeClient.getJoke(settings);
+
+    if (!output.joke && !output.setup)
+      return interaction.reply(
+        'No jokes in this category, Please check set categories, language and blacklisted flags. /settings'
+      );
 
     if (output.type == 'single') {
       return interaction.reply(output.joke);
