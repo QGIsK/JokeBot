@@ -6,13 +6,17 @@ const ServerSchema = mongoose.Schema({
     required: true,
     trim: true,
   },
-  safeMode: {
+  safemode: {
     type: Boolean,
     default: false,
   },
   lang: {
     type: String,
     default: 'en',
+  },
+  blacklist: {
+    type: Array,
+    default: [],
   },
 });
 
