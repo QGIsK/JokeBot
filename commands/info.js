@@ -10,13 +10,6 @@ module.exports = {
   async execute(interaction, settings) {
     const output = await JokeClient.info(settings);
 
-    console.log(
-      { name: 'version', value: output.version },
-      { name: 'JokeCount', value: String(output.jokes.totalCount) },
-      { name: 'Joke Types', value: output.jokes.types.join(' & ') },
-      { name: 'Information', value: output.info }
-    );
-
     const infoEmbed = new MessageEmbed()
       .setTitle('Joke API & Bot Information')
       .setURL('https://jokeapi.dev')
